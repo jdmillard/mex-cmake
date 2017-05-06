@@ -23,3 +23,7 @@ TODO: notes about using the script+mex file to instantiate the class and mention
 ### For CMake
 1. Navigate
 1. ... TODO
+
+
+- for CMake, manage headers such that it never requires the mex api
+- 
