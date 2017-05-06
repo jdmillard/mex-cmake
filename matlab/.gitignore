@@ -1,0 +1,6 @@
+# matlab autosave files
+*.asv
+*.m~
+
+# compiled mex binaries
+*.mex*
