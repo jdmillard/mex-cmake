@@ -56,10 +56,12 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 
 
   // get the class instance pointer from the second input
+  // this has the effect of finding the already-instantiated class' memory
+  // location, putting Matlab and C++ on the same page.
   my_class123 *my_class123_instance = convertMat2Ptr<my_class123>(prhs[1]);
 
 
-  // input from matlab requesting "train" method call?
+  // input from matlab requesting "train" method call
   if (!strcmp("train", cmd)) {
     std::cout << "train method successfully hit from matlab" << std::endl;
     // check parameters
@@ -89,7 +91,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
   }
 
 
-  // input from matlab requesting "test" method call?
+  // input from matlab requesting "test" method call
   if (!strcmp("test", cmd))
   {
     // check parameters

@@ -2,7 +2,7 @@
 
 This workspace demonstrates CMake and MEX compilation using C++ classes. In Matlab, the result is persistent objects.
 
-The following (MEX and CMake) are entirely independent. One is not required for the other. The purpose is to provide an example showing that the two can coexist, allowing the same code base to used for both.
+The following compilation methods (MEX and CMake) are entirely independent. One is not required for the other. The purpose is to provide an example showing that the two can coexist in the same workspace. This allows the same code base to used for both.
 
 ### For MEX
 1. Navigate to the `matlab` subdirectory
@@ -25,5 +25,5 @@ TODO: notes about using the script+mex file to instantiate the class and mention
 1. ... TODO
 
 
-- for CMake, manage headers such that it never requires the mex api
-- 
+- for CMake, headers will be such that it never requires the mex api
+-

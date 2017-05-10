@@ -1,4 +1,11 @@
-%CLASS_INTERFACE Example MATLAB class wrapper to an underlying C++ class
+% CLASS_INTERFACE Example MATLAB class wrapper to an underlying C++ class
+% "class_interface_mex" is the name of the .mex file in the same directory
+% The "mexFunction" is always what is executed in C++ by Matlab API design
+% The inputs to class_interface_mex are then the inputs to mexFunction
+% in the form of the "prhs" array (see class_interface_mex.cpp).
+% The values of these inputs are evaluated by mexFunction to perform C++
+% class operations then return results in the form of the "plhs" array.
+
 classdef class_interface < handle
     properties (SetAccess = private, Hidden = false)
         objectHandle; % Handle to the underlying C++ class instance

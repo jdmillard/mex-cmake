@@ -20,7 +20,7 @@ mex('-v', include, src1, src2);
 
 
 % -----------------------
-% eventually move below here to separate script
+% move the code below here to separate script (example.m)... eventually
 % -----------------------
 
 
