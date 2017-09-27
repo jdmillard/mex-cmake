@@ -15,15 +15,19 @@ build
 ```
 Alternatively, from the terminal (not required):
 ```
-matlab -nojvm < testingmex.m
+matlab -nojvm < build.m
 ```
 TODO: notes about using the script+mex file to instantiate the class and mention an example script
 
 
 ### For CMake
-1. Navigate
-1. ... TODO
-
-
-- for CMake, headers will be such that it never requires the mex api
--
+1. Navigate to the `build` subdirectory
+```
+cd /path/to/repo/build/
+```
+1. Compile and run
+```
+cmake ..
+make
+./mex-cmake
+```

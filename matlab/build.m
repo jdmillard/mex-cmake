@@ -33,3 +33,4 @@ abc.train(4.23467)
 
 % TODO:
 % test multiple instantiations with different data member values
+% and storage of information
