@@ -1,6 +1,6 @@
 ## MEX and CMake Workspace Example
 
-This workspace demonstrates CMake and MEX compilation using C++ classes. In Matlab, the result is persistent objects.
+This workspace demonstrates CMake and MEX compilation using C++ classes. In Matlab, the result is persistent objects. The basic idea is to create a MATLAB class whose methods interface with a mex function. The mex function is a .cpp file compiled by MATLAB that, in this case, manages an instantiation of the class.
 
 The following compilation methods (MEX and CMake) are entirely independent. One is not required for the other. The purpose is to provide an example showing that the two can coexist in the same workspace. This allows the same code base to used for both.
 

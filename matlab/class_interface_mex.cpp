@@ -14,7 +14,7 @@
 
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 {
-  // nhls   number of expected outputs
+  // nlhs   number of expected outputs
   // plhs   array to be populated by outputs (DATA BACK TO MATLAB)
   // nrhs   number of inputs
   // prhs   array poplulated by inputs (DATA FROM MATLAB)
